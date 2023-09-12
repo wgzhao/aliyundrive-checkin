@@ -13,7 +13,7 @@ jobs:
           pip3 install -r ./requirements.txt
       - name: Run checkin
         run: |
-          python3 ./main.py --token_string "${{ secrets.TOKEN }}"
+          python3 ./main.py --token_string "${{ secrets.ALIYUN_TOKEN }}"
         env:
           PUSHPLUS_TOKEN: ${{ secrets.PUSHPLUS_TOKEN }}
           SERVERCHAN_SENDKEY: ${{ secrets.SCKEY }}
